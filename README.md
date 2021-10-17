@@ -1,6 +1,8 @@
 # \<gfont-apply>
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+> Search for available google fonts and apply it to your content. Great way to quickly try out lots of different fonts and find the right one for your content
+
+![font-apply](https://user-images.githubusercontent.com/12684286/137629878-e768edb0-083f-4432-9a0d-f6f3d99558c0.gif)
 
 ## Installation
 
