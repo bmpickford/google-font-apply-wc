@@ -32,7 +32,7 @@ You are required to supply either an array of font families that are valid googl
 
 ```html
 <gfont-apply
-  ><!-- An array of font families. See index.html for an example. REQUIRED if google fonts API key is not supplied -->
+  <!-- An array of font families. See index.html for an example. REQUIRED if google fonts API key is not supplied -->
   .fonts=${fonts}
 
   <!-- Google fonts API key. REQUIRED if the fonts array above is not set -->
