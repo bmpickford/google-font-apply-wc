@@ -28,46 +28,21 @@ npm i gfont-apply
 
 ## Configuration
 
-<strong>Note:&nbsp;</strong>You are required to supply either an array of font families that are valid google fonts, or a google font API key
+You are required to supply either an array of font families that are valid google fonts, or a google font API key. See `src/fonts.js` for an example on how the fonts should be formatted.
 
-#### Fonts
-Array of valid font families you want to be available in the autocomplete. Should follow this typing
-
-```typescript
-interface Font {
-  family: string;
-}
-
-```
-
-Example
 ```html
-import fonts from './myfonts.json';
-<gfont-apply .fonts=${fonts}>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus. 
-</gfont-apply>
-```
+<gfont-apply
+  ><!-- An array of font families. See index.html for an example. REQUIRED if google fonts API key is not supplied -->
+  .fonts=${fonts}
 
-#### API Key
-To dynamically download a list of fonts from Google Fonts, you can use their API after generating an API key
-```html
-<gfont-apply .apiKey="KEY_HERE">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus. 
-</gfont-apply>
-```
+  <!-- Google fonts API key. REQUIRED if the fonts array above is not set -->
+  .apiKey="KEY_HERE"
 
-#### Show
-Show or hides the autocomplete element
-```html
-<gfont-apply .show=${false}>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus. 
-</gfont-apply>
-```
+  <!-- Show the autocomplete element. Defaults to true -->
+  .show=${false}
 
-### MaxResults
-To extend or reduce the number of items shown in the autocomplete
-```html
-<gfont-apply .maxItems="10">
+  <!-- Number of items to show in autocomplete results. Defaults to 4 -->
+  .maxItems="10">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque cursus. 
 </gfont-apply>
 ```
