@@ -4,6 +4,10 @@
 
 ![font-apply](https://user-images.githubusercontent.com/12684286/137629878-e768edb0-083f-4432-9a0d-f6f3d99558c0.gif)
 
+___
+[Demo](https://bmpickford.github.io/google-font-apply-wc/)
+___
+
 ## Installation
 
 ```bash
